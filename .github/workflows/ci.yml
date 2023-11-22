@@ -31,19 +31,20 @@ jobs:
     - name: Build with Gradle
       uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
       with:
-          arguments: build
-          cache-disabled: false
-          cache-read-only: true
-          cache-write-only: false
-          gradle-home-cache-includes: caches
-      notifications
-        
-          generate-job-summary: true
-          dependency-graph: disabled
-          gradle-home-cache-strict-match: false
-          workflow-job-context: null
-          gradle-home-cache-cleanup: false
-          github-token: ***
+        arguments: build
+        cache-disabled: false
+        cache-read-only: true
+        cache-write-only: false
+        gradle-home-cache-includes: caches
+
+      notifications:
+        generate-job-summary: true
+        dependency-graph: disabled
+        gradle-home-cache-strict-match: false
+        workflow-job-context: null
+        gradle-home-cache-cleanup: false
+        github-token: ***
+
       env:
-          JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/11.0.21-9/x64
-          JAVA_HOME_11_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/11.0.21-9/x64
+        JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/11.0.21-9/x64
+        JAVA_HOME_11_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/11.0.21-9/x64
