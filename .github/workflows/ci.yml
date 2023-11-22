@@ -35,9 +35,8 @@ jobs:
         cache-disabled: false
         cache-read-only: true
         cache-write-only: false
-        gradle-home-cache-includes: caches
-
-      notifications:
+        gradle-home-cache-includes: caches notifications
+        
         generate-job-summary: true
         dependency-graph: disabled
         gradle-home-cache-strict-match: false
